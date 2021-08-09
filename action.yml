@@ -1,0 +1,12 @@
+name: Big JSON Action 
+description: Receives big json as callargs
+inputs:
+  callargs:
+    description: Anything goes.
+    required: true
+    default: '{}'
+runs:
+  using: 'node12'
+  pre: 'dist/index.js'
+  main: 'dist/index.js'
+  post: 'dist/index.js'
